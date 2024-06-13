@@ -9,9 +9,9 @@ app = FastAPI()
 DATA_FILE = 'data/users.json'
 
 class User(BaseModel):
-    id: int
-    name: str
-    email: str
+    id: int 
+    name: str 
+    email: str 
 
 def load_users():
     if not os.path.exists(DATA_FILE):
